@@ -1,0 +1,14 @@
+node_modules/
+lib/
+dist/
+template/
+fixtures/
+website/
+examples/
+bin/
+build/
+**/*.test.js
+build/**/*
+dist-wechat/
+index.html
+src/qr-generator/lib.ts

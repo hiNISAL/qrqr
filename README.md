@@ -1,2 +1,5 @@
-# qrqr
-qrcode generator
+# Qrr
+
+> Building...
+
+Beautify tool for QR Code.
