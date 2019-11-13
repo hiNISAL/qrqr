@@ -4,7 +4,7 @@ const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 
 const _ = path => resolve(__dirname, path);
 
-const LIBRARY_NAME = 'qrr';
+const LIBRARY_NAME = 'Qrr';
 const EXPORT_FILE_NAME = 'qrr.js'
 
 const cssLoaders = [

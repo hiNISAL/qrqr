@@ -84,10 +84,14 @@ class QRSupporter {
     return this;
   }
 
-  public table(margin: number = 0, cellSize?: number): string {
+  public table(margin: number = 0, cellSize?: number): HTMLTableElement {
     cellSize = this.getCellSize(cellSize);
 
-    return this.qr.createTableTag(cellSize, margin);
+    const el = document.createElement('div');
+
+    el.innerHTML = this.qr.createTableTag(cellSize, margin);
+
+    return el.querySelector('table')!;
   }
 
   public img(margin: number = 0, cellSize?: number): HTMLImageElement {
