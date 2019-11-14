@@ -3,8 +3,8 @@ import { key } from '../config';
 
 export default {
   value() {
-    setStyle(this.bgEl, {
-      [key]: this[key],
+    setStyle(this.el, {
+      [key]: (typeof this[key] === 'number') ? `${this[key]}px` : this[key],
     });
 
     this.changeList[key].changed = false;

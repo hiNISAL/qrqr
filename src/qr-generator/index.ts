@@ -78,6 +78,10 @@ class QRSupporter {
     return cellSize;
   }
 
+  public version(): number {
+    return this.qr.getModuleCount();
+  }
+
   public setSize(size: number) {
     this.size = size;
 

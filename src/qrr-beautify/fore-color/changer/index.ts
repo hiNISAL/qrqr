@@ -3,8 +3,10 @@ import { key } from '../config';
 
 export default {
   value() {
-    setStyle(this.bgEl, {
-      [key]: this[key],
+    this.foreTds.forEach((td) => {
+      setStyle(td, {
+        backgroundColor: this[key],
+      });
     });
 
     this.changeList[key].changed = false;
